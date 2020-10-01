@@ -1,7 +1,7 @@
 elsa
 ====
 
-Elsa will help you build your `Frozen-Flask <http://pythonhosted.org/Frozen-Flask/>`_ based website and deploy it to GitHub pages.
+Elsa shall help you in building your  `Frozen-Flask <http://pythonhosted.org/Frozen-Flask/>`_ based website and deploy it to GitHub pages.
 It's based on scripts from `PyLadies.cz repo <https://github.com/PyLadiesCZ/pyladies.cz>`_ and is distributed under the terms of the MIT license, see LICENSE (does not apply for the image below). It requires Python 3.
 
 .. figure:: https://raw.githubusercontent.com/pyvec/elsa/master/logo/elsa.png
@@ -43,12 +43,12 @@ Travis CI based deployment
 --------------------------
 
 Travis CI is (in this context) a tool, that allows you to deploy the site automatically to GitHub pages after every push.
-All you have to do is tell Travis to run Elsa and provide a GitHub token.
+All you need to do is speak to Travis to run Elsa and provide a GitHub token.
 Elsa on Travis will freeze the site and deploy it frozen to GitHub pages.
 Elsa knows it's being run on Travis and will use the provided GitHub token to gain push permissions.
 Elsa will push force to ``gh-pages`` branch in a single commit rewriting the history and all manual changes of that branch.
 
-Here is an example ``.travis.yml`` file for automatic deployment. It assumes elsa and other requirements are in ``requirements.txt`` and that you are familiar with Travis CI (so it's not very verbose):
+Here is one example ``.travis.yml`` file for automatic deployment. It assumes elsa and other requirements are in ``requirements.txt`` and that you are familiar with Travis CI (so it's not very verbose):
 
 .. code-block:: yaml
 
